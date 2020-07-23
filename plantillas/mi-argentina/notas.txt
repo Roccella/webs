@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+MI ARGENTINA
+
+- sesión cerrada (cambiar ilustración ver con nacho)
+- success de registro
+- sesión expirada
+- error 404
+- agregar colores text y bg
+- loading (cambio de iso avisar nomás)
+- paneles que falten? error servicio? vencida?
+
+
+

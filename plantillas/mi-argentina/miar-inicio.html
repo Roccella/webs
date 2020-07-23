@@ -1,0 +1,677 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]> <html lang="es"class="iem7"> <![endif]-->
+<!--[if lt IE 7 ]> <html lang="es" class="ie6 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="es" class="ie7 lt-ie8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="es" class="ie8"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html lang="es"><!--<![endif]-->
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio - Mi Argentina</title>
+  <meta name="description" content="Base de html y css para la creación de sitios pertenecientes a la Administración Pública Nacional de la República Argentina.">
+  <meta name="author" content="Presidencia de la Nación">
+  <link rel="shortcut icon" href="/proyectos/mi-argentina/v5/img/favicon.ico">
+
+  <!-- Nav and address bar color -->
+  <meta name="theme-color" content="#0072b8">
+  <meta name="msapplication-navbutton-color" content="#0072b8">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#0072b8">
+
+  <meta property="og:url" content="http://localhost:4000/proyectos/mi-argentina/v5/base/base-general.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Banco de Pruebas" />
+  <meta property="og:description" content="Base de html y css para la creación de sitios pertenecientes a la Administración Pública Nacional de la República Argentina." />
+  <meta property="og:image" content="/ejemplos/img/jumbotron.jpg" />
+  <meta property="og:locale" content="es_AR" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Banco de Pruebas" />
+  <meta name="twitter:description" content="Base de html y css para la creación de sitios pertenecientes a la Administración Pública Nacional de la República Argentina." />
+  <meta name="twitter:image" content="/ejemplos/img/jumbotron.jpg" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../node_modules/argob-poncho/dist/css/poncho.css">
+  <link rel="stylesheet" href="../../node_modules/argob-poncho/dist/css/miargentina.css">
+  <link rel="stylesheet" href="../../node_modules/argob-poncho/dist/icono-arg.css">
+  
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="/node_modules/html5shiv/html5shiv.js"></script>
+      <script src="/node_modules/respond.js/respond.min.js"></script>
+  <![endif]-->  
+
+</head>
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<body>
+  
+<div class="sidebar-overlay"></div>
+
+    <header class="container-fluid">
+        <div class="row">
+            <!-- logo y boton mi cuenta -->
+                <div class="navbar navbar-top navbar-default nav-header-dashboard" role="navigation"  aria-labelledby="Mi cuenta">
+                              <div>
+                                <div class="nav navbar-nav navbar-header m-y-1 m-l-2">
+                                  <a href="#">
+                                    <i class="visible-xs fa fa-reorder icon-init sm-r-1" id="btn-mobile"></i>
+                                    <img alt="Mi Argentina" title="Mi Argentina" src="assets/miargentina.svg" class="brand-icon" height="40">
+                                    <h1 class="sr-only">Mi Argentina</h1>
+                                  </a>
+                                </div>
+                              </div>
+                              <nav class="dropdown nav navbar-nav navbar-right navbar-right-mobile navbar-right-header m-y-1">
+                                <button class="text-primary btn btn-link dropdown-toggle m-t-0 m-r-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                  <span>Mi cuenta </span>
+                                  <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-micuenta"  aria-labelledby="dropdownMenuButton" role="dialog" aria-modal=true>
+                                  <ul>
+                                    <li>
+                                      <p>
+                                        <strong>María Paula Garibaldi</strong>
+                                      </p>
+                                    </li>
+                                    <li>
+                                      <p>34303273<p>
+                                    </li>
+                                    <li>
+                                      <small>Validado nivel 3 
+                                        <i class="fa fa-check-square-o text-success" aria-hidden="true"></i>
+                                      </small>
+                                    </li>
+                                    <hr>
+                                    <li role="menu-item">
+                                      <a href="id/datos-personales.html">Mi perfil</a>
+                                    </li>
+                                    <li role="menu-item">
+                                      <a href="https://id.argentina.gob.ar/mis-dispositivos">Mis dispositivos</a>
+                                    </li>
+                                    <li role="menu-item">
+                                      <a href="https://id.argentina.gob.ar/password/change">Configurar mi cuenta</a>
+                                    </li>
+                                    <li role="menu-item">
+                                      <a href="https://www.argentina.gob.ar/mi/terminos-y-condiciones">Términos y condiciones</a>
+                                    </li>
+                                    <hr class="m-y-1">
+                                    <li class="menu" role="menu-item">
+                                      <a href="https://mi.argentina.gob.ar/salir" class="logout">Cerrar la sesión</a>
+                                    </li>
+                                  </ul>
+                                  <button class="btn btn-link no-border-shadow dropdown-toggle sr-only" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Cerrar menú mi cuenta</span>
+                                    <i class="fa fa-chevron-up text-muted text-center visible-xs" aria-hidden="true"></i>
+                                  </button>
+                                </div>
+                              </nav>        
+                </div>
+            
+        </div>
+    </header>
+
+
+    <main role="main" class="container-fluid">
+        <div class="row dashboard">
+              <div class="sidebar p-l-0">
+
+
+                <nav class="page-sidebar m-b-2 dashboard-sidebar">
+                    <ul class="nav nav-pills nav-stacked nav-dashboard m-t-2 p-r-0">
+                        <li class="p-r-0 active">
+                            <a href="#" onclick='location.reload(true); return false;'>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <i class="icono-arg-casa-negativo" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="m-b-0">Inicio</p>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </li>
+                        <li class="p-r-0">
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <i class="icono-arg-credenciales-negativo" aria-label="Mis credenciales" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="m-b-0">Mis documentos</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="p-r-0">
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <i class="icono-arg-turno-negativo" aria-label="Mis turnos" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="m-b-0">Mis turnos</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="p-r-0">
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <i class="icono-arg-tramite-negativo" aria-label="Mis trámites" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="m-b-0">Mis trámites</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="p-r-0">
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <i class="icono-arg-cobros-negativo" aria-label="Mis cobros" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="m-b-0">Mis cobros</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="p-r-0">
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <i class="icono-arg-automotor-negativo" aria-label="Mis vehículos" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="m-b-0">Mis vehículos</p>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </li>
+
+
+
+                        <li class="p-r-0">
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <i class="icono-arg-cruz-medicina-negativo" aria-label="Mi salud" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="m-b-0">Mi salud</p>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </li>
+
+
+
+
+
+                    </ul>
+                </nav>
+
+
+
+            </div>
+
+
+            <div class="col-md-12 m-y-2 main-main">
+
+            
+
+
+                        <div class="row">
+                          <div class="col-md-12">
+                                  <!-- <ol class="breadcrumb">
+                                      <li class="active">Inicio</li>
+                                  </ol> -->
+                                  <h1>Bienvenida María Paula</h1>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                          <div class="row">
+
+                              <div class="col-lg-8 col-md-12 main-left">
+                                  
+
+                                <div class="row">
+                                  <div class="col-md-12">
+
+                                    <div class="alert alert-info pclose m-b-2">
+                                      <div class="row">
+                                        <div class="col-xs-10 col-md-11">
+                                          <p class="h4">Alerta por Coronavirus</p>
+                                        </div>
+                                        <div class="col-xs-2 col-md-1">
+                                          <div class="text-right btn-close">
+                                            <i class="fa fa-close"></i>
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                          <p>Información actualizada de cómo prevenir y qué medidas tomar para cuidarnos entre todos.</p>
+                                          <a href="#" class="btn btn-primary">Ver información</a>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    </div>
+                                  </div>
+
+                                  <div class="row panels-row botonera">
+                                    <div class="col-md-4 col-xs-6">
+
+                                      <a class="panel panel-default" href="#">
+                                        <div class="panel-body">
+                                          <img src="assets/misdocumentos.svg" alt="Mis documentos">
+                                          <p class="h3">Mis documentos</p>
+                                        </div>
+                                      </a>
+
+                                    </div>
+                                    <div class="col-md-4 col-xs-6">
+
+                                      <a class="panel panel-default" href="#">
+                                        <div class="panel-body">
+                                          <img src="assets/misvehiculos.svg" alt="Mis vehículos">
+                                          <p class="h3">Mis vehículos</p>
+                                        </div>
+                                      </a>
+
+                                    </div>
+                                    <div class="col-md-4 col-xs-6">
+
+                                      <a class="panel panel-default" href="#">
+                                        <div class="panel-body">
+                                          <img src="assets/misalud.svg" alt="Mi salud">
+                                          <p class="h3">Mi salud</p>
+                                        </div>
+                                      </a>
+
+                                    </div>
+                                    <div class="col-md-4 col-xs-6">
+
+                                      <a class="panel panel-default" href="#">
+                                        <div class="panel-body">
+                                          <img src="assets/miscobros.svg" alt="Mis cobros">
+                                          <p class="h3">Mis cobros</p>
+                                        </div>
+                                      </a>
+
+                                    </div>
+                                    <div class="col-md-4 col-xs-6">
+
+                                      <a class="panel panel-default" href="#">
+                                        <div class="panel-body">
+                                          <img src="assets/misturnos.svg" alt="Mis turnos">
+                                          <p class="h3">Mis turnos</p>
+                                        </div>
+                                      </a>
+
+                                    </div>
+                                    <div class="col-md-4 col-xs-6">
+
+                                      <a class="panel panel-default" href="#">
+                                        <div class="panel-body">
+                                          <img src="assets/mistramites.svg" alt="Mis trámites">
+                                          <p class="h3">Mis trámites</p>
+                                        </div>
+                                      </a>
+
+                                    </div>
+                                  </div>
+
+
+                                  <!-- <div class="row panels-row">
+
+                                    <div class="col-md-6">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                          <p class="h3">Mis turnos</p>
+                                        </div>
+                                        <div class="panel-body bg-gray">
+                                          <p class="h4">Turnos cancelados</p>
+                                          <p><strong>Los turnos programados han sido cancelados</strong> en el marco de las medidas del Gobierno Nacional por la pandemia de <strong>COVID-19</strong> (Coronavirus).</p>
+                                          <p><strong>Cada organismo dispondrá cuándo reanudar su atención</strong> dependiendo de la criticidad del trámite.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                          <p class="h3">Mis trámites</p>
+                                        </div>
+                                        <div class="panel-body">
+                                          <p class="h4">Trámites a distancia</p>
+                                          <p>Para hacer el seguimiento de tus trámites en línea primero necesitás validar tu identidad con la aplicación móvil.</p>
+                                          <a href="#" class="btn btn-primary btn-block">Descargar aplicación</a>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                  </div> -->
+
+
+                                  <!-- <div class="row panels-row">
+
+                                    <div class="col-md-6">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                          <p class="h3">Mis turnos</p>
+                                        </div>
+                                        <div class="panel-body bg-gray text-center p-x-2 p-y-2">
+                                          <img src="assets/empty_turnos.png" alt="No tenés turnos pendientes" class="m-t-1 m-b-2">
+                                          <p class="lead">No tenés turnos pendientes</p>
+                                        </div>
+                                        <div class="panel-footer">
+                                          <a href="#" class="btn btn-success btn-block">Sacar un turno</a>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                          <p class="h3">Mis trámites</p>
+                                        </div>
+                                        <div class="panel-body bg-gray text-center p-x-2 p-y-2">
+                                          <img src="assets/empty_tramites.png" alt="No tenés trámites pendientes" class="m-t-1 m-b-2">
+                                          <p class="lead">No tenés trámites pendientes</p>
+                                        </div>
+                                        <div class="panel-footer">
+                                          <a href="#" class="btn btn-success btn-block">Ver mis trámites</a>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                  </div> -->
+
+
+                                  <div class="row panels-row">
+
+
+                                    <div class="col-md-6">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                          <p class="h3">Teléfonos útiles (test)</p>
+                                        </div>
+                                        <div class="panel-list-group">
+
+
+                                          <ul class="list-group list-telefonos">
+                                            <li class="list-group-item">
+                                              <div class="media">
+                                                <div class="media-left hidden-xs">
+                                                  <i class="icono-arg-telefono-llamada-negativo"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                  <p class="lead"><a href="#">911</a></p>
+                                                  <p class="text-muted small">Central de Emergencias Nacional</p>	
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="media">
+                                                <div class="media-left hidden-xs">
+                                                  <i class="icono-arg-telefono-llamada-negativo"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                  <p class="lead"><a href="#">144</a></p>
+                                                  <p class="text-muted small">Violencia de género</p>	
+                                                </div>
+                                              </div>
+                                            </li>
+                                          </ul>
+
+
+                                        </div>
+                                        <div class="panel-footer">
+                                          <a href="#" class="btn btn-success btn-block">Ver más teléfonos</a>
+                                        </div>
+                                      </div>
+                                    </div>
+
+
+                                    <div class="col-md-6">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                          <p class="h3">Mis turnos</p>
+                                        </div>
+                                        <div class="panel-list-group">
+
+
+                                          <ul class="list-group list-turnos">
+                                            <li class="list-group-item">
+                                              <div class="media">
+                                                <div class="media-left hidden-xs">
+                                                  <i class="icono-arg-turno-negativo"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                  <p class="lead"><a href="#">Vacuna contra la fiebre amarilla</a></p>
+                                                  <p class="text-muted small">03/01/2019 -  13:45h</p>	
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="media">
+                                                <div class="media-left hidden-xs">
+                                                  <i class="icono-arg-turno-negativo"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                  <p class="lead"><a href="#">Vacuna contra la fiebre amarilla</a></p>
+                                                  <p class="text-muted small">03/01/2019 -  13:45h</p>	
+                                                </div>
+                                              </div>
+                                            </li>
+                                          </ul>
+
+
+                                        </div>
+                                        <div class="panel-footer">
+                                          <a href="#" class="btn btn-success btn-block">Sacar un turno</a>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <!-- <div class="col-md-6">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                          <p class="h3">Mis trámites</p>
+                                        </div>
+                                        <div class="panel-list-group">
+
+
+                                          <ul class="list-group list-tramites">
+                                            <li class="list-group-item">
+                                              <div class="media">
+                                                <div class="media-left hidden-xs">
+                                                  <i class="icono-arg-tramite-negativo"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                  <p class="lead">3 trámites pendientes</p>
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="media">
+                                                <div class="media-left hidden-xs">
+                                                  <i class="icono-arg-tramite-negativo"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                  <p class="lead">1 nota nueva</p>
+                                                </div>
+                                              </div>
+                                            </li>
+                                          </ul>
+
+
+                                        </div>
+                                        <div class="panel-footer">
+                                          <a href="#" class="btn btn-success btn-block">Ver mis trámites</a>
+                                        </div>
+                                      </div>
+                                    </div> -->
+
+                                  </div>
+
+
+                              </div>
+
+
+                              <div class="col-lg-4 col-md-12 main-right">
+
+                                <div class="row panels-row">
+
+                              <div class="col-xs-12 col-md-6 col-lg-12">
+                                <div class="panel panel-default panel-horizontal">
+                                  <div class="panel-left">
+                                    <p class="h0">25</p>
+                                    <p><strong>Mayo</strong></p>
+                                  </div>
+                                  <div class="panel-right">
+                                    <p class="h4">Próximo feriado</p>
+                                    <p>Celebramos el Día de la Revolución de Mayo.</p>
+                                    <a href="#" class="btn btn-primary">Ver más feriados</a>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="col-xs-12 col-md-6 col-lg-12">
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <p class="h4">Tu perfil está completo en un 60%</p>
+                                  </div>
+                                  <div class="panel-body">
+                                    <div class="progress">
+                                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                        <span class="sr-only">60% completo</span>
+                                      </div>
+                                    </div>
+                                    <p>Cargá tu domicilio y datos de contacto para poder hacer trámites más rápido.</p>
+                                    <a href="#" class="btn btn-primary btn-block">Ver mi perfil</a>
+                                  </div>
+                                </div>
+                              </div>
+
+                                <!-- 
+                              <div class="col-xs-12 col-md-6 col-lg-12">
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <p class="h4">¡Tu perfil está completo!</p>
+                                  </div>
+                                  <div class="panel-img">
+                                    <img src="assets/panel_perfil_completo.png" alt="¡Tu perfil está completo!">
+                                  </div>
+                                  <div class="panel-body">
+                                    <p>Por favor recordá mantener actualizado tus datos en caso de cambiar de domicilio o datos de contacto.</p>
+                                    <a href="#" class="btn btn-primary btn-block">Ver mi perfil</a>
+                                  </div>
+                                </div>
+                              </div>
+                              -->
+
+
+                                <!--
+                              <div class="col-xs-12 col-md-6 col-lg-12">
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <p class="h4">Mi billetera</p>
+                                  </div>
+                                  <div class="panel-img">
+                                    <img src="assets/panel_mi_billetera.png" alt="Mi billetera">
+                                  </div>
+                                  <div class="panel-body">
+                                    <p>Ahora podés pagar servicios o enviar dinero desde tu celular usando la aplicación de Mi Argentina.</p>
+                                    <a href="#" class="btn btn-primary btn-block">Descargar aplicación</a>
+                                  </div>
+                                </div>
+                              </div> -->
+
+                              <div class="col-xs-12 col-md-6 col-lg-12">
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <p class="h4">Validá tu identidad</p>
+                                    </div>
+                                    <div class="panel-img">
+                                      <img src="assets/panel_valida_tu_identidad.png" alt="Validá tu identidad">
+                                    </div>
+                                    <div class="panel-body">
+                                      <p>Descargá la aplicación y validá tu identidad para poder hacer más trámites.</p>
+                                      <a href="#" class="btn btn-primary btn-block">Descargar aplicación</a>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+
+                              </div>
+
+                            </div>
+                                
+                          </div>
+
+
+
+
+
+        
+
+            </div>
+
+
+
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container-fluid main-footer p-x-2">
+        <div class="row footer center-block">
+            <div class="col-sm-6 m-y-1">
+              <img class="image-responsive" height="30" alt="Argentina Unida" src="assets/logo_argentina_unida.svg">
+            </div>
+            <div class="col-sm-6 text-right m-t-1 m-b-2">
+              <a href="#">Preguntas frecuentes</a>
+              <a href="#">Términos y condiciones</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+<script>
+$("#btn-mobile").click(function(){
+  $(".sidebar").toggleClass("sidebar-mobile"),
+  $(".sidebar-overlay").toggleClass("sidebar-overlay-on");
+});
+$(".sidebar-overlay").click(function(){
+  $(".sidebar").toggleClass("sidebar-mobile"),
+  $(".sidebar-overlay").toggleClass("sidebar-overlay-on");
+});
+</script>
+
+
+
+
+
+</body>
+</html>

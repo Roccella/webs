@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]> <html lang="es"class="iem7"> <![endif]-->
+<!--[if lt IE 7 ]> <html lang="es" class="ie6 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="es" class="ie7 lt-ie8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="es" class="ie8"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html lang="es"><!--<![endif]-->
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingresar - Mi Argentina</title>
+  <meta name="description" content="Base de html y css para la creación de sitios pertenecientes a la Administración Pública Nacional de la República Argentina.">
+  <meta name="author" content="Presidencia de la Nación">
+  <link rel="shortcut icon" href="/proyectos/mi-argentina/v5/img/favicon.ico">
+
+  <!-- Nav and address bar color -->
+  <meta name="theme-color" content="#0072b8">
+  <meta name="msapplication-navbutton-color" content="#0072b8">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#0072b8">
+
+  <meta property="og:url" content="http://localhost:4000/proyectos/mi-argentina/v5/base/base-general.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Banco de Pruebas" />
+  <meta property="og:description" content="Base de html y css para la creación de sitios pertenecientes a la Administración Pública Nacional de la República Argentina." />
+  <meta property="og:image" content="/ejemplos/img/jumbotron.jpg" />
+  <meta property="og:locale" content="es_AR" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Banco de Pruebas" />
+  <meta name="twitter:description" content="Base de html y css para la creación de sitios pertenecientes a la Administración Pública Nacional de la República Argentina." />
+  <meta name="twitter:image" content="/ejemplos/img/jumbotron.jpg" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../node_modules/argob-poncho/dist/css/poncho.css">
+  <link rel="stylesheet" href="../../node_modules/argob-poncho/dist/css/miargentina.css">
+  <link rel="stylesheet" href="../../node_modules/argob-poncho/dist/icono-arg.css">
+  
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="/node_modules/html5shiv/html5shiv.js"></script>
+      <script src="/node_modules/respond.js/respond.min.js"></script>
+  <![endif]-->  
+
+</head>
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<body class="body-login">
+  
+<div class="sidebar-overlay"></div>
+
+    <header class="container-fluid header-login">
+        <div class="row">
+            <!-- logo y boton mi cuenta -->
+                <div class="navbar navbar-top navbar-default nav-header-dashboard" role="navigation"  aria-labelledby="Mi cuenta">
+                              <div>
+                                <div class="nav navbar-nav navbar-header">
+                                  <a href="#">
+                                    <!-- <i class="visible-xs fa fa-reorder icon-init sm-r-1" id="btn-mobile"></i> -->
+                                    <img alt="Mi Argentina" title="Mi Argentina" src="assets/miargentina.svg" class="brand-icon" height="40">
+                                    <h1 class="sr-only">Mi Argentina</h1>
+                                  </a>
+                                </div>
+                              </div>
+    
+                </div>
+            
+        </div>
+    </header>
+
+<!-- AGREGAR CONTAINER FLUID -->
+    <main role="main" class="container-fluid">
+        <div class="row dashboard">
+
+
+
+            
+
+
+
+
+
+
+            <!-- CAMBIAR CLASES COL -->
+            <div class="col-md-offset-4 col-md-4 col-sm-offset-2 col-sm-8 col-xs-12">
+                <!-- AGREGAR PANEL DEFAULT Y PANEL BODY -->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+
+
+                <h1 class="sr-only">Ingresá o creá tu cuenta de Mi Argentina</h1>
+                <h2 aria-hidden="true">Ingresá a tu cuenta</h2>
+                
+
+
+                <form method="post">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="GplHX0GYEd5vHaPJWcxI7xn0iWEocMXoSMtSY2NQKMRAPdepYmIK575C4ab3j6ui">
+
+                    
+                    
+                    <input type="hidden" name="next" value="/authorize/?client_id=613410&amp;response_type=code&amp;scope=openid+profile+email+optional&amp;redirect_uri=https://mi.argentina.gob.ar/_oauth/oidc&amp;state=eyJsb2dpblN0eWxlIjoicmVkaXJlY3QiLCJjcmVkZW50aWFsVG9rZW4iOiJaaThyN3VycHRqaE4zenNMRCIsImlzQ29yZG92YSI6ZmFsc2UsInJlZGlyZWN0VXJsIjoiaHR0cHM6Ly9taS5hcmdlbnRpbmEuZ29iLmFyLyJ9">
+                    
+
+                    
+
+
+                    <label for="cuil">CUIL o pasaporte extranjero</label>
+                    <div class="row">
+                        <div class="col-xs-12 form-group item-form">
+                        <input type="text" class="form-control" id="cuil" aria-required="true" name="id_number" value="" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAA11JREFUWAndVzlLY1EU/pKJioiiiYoxgoIguMQoUyg2CTbBTrCcUvAHWFgJNlbzM6wGQQQLO3VEEEtTuRSKiMaFxA0R18z57uRd5r3szxeEOZDce8/63XOX864LQvPz84G3t7ef0o2kUqlW8pwil8t1Lr5+ezyemdnZ2TOrX1c6eEwC+6xCJ8cCJCEgQlYQbs683ME5EcZIZ9k0L7eMIiZOeQcZsdxOr3k+/NliMQNfSv83gO7ubkxPT4NtLiprBnp7e1FXVwe2uaisAOTsq7hGmw1EWQFkC2jlmQBUVVWhs7MTDQ0NVj3YlWU4sjA8xri+vh6Tk5Oora3Fx8cHVlZWsLu7q8R2ZYbvfK3OwPDwsApOZbfbjdHRUW1nV6Yd5OloAHl0yirSAHZ2dvDw8KCCcQnW19d1YLsy7SBPxzU3N5cy5NxobW1tSCaTuLm5MdiqzSczKRYYyJGMi8pm+vvg1ASggK2jYgGSFBADegkc9V6EM6mMXn4ffBmANMawvgeKAJ2hEgwGMTIyAp/Ph7u7O+zv72NjY0PdIxnKWRiSBb9tAAw+MTGh3TY1NYE/gllcXNR8dhobG1FZWYnLy0u8v7+bZLaXgDMnvb6+Ynl5GUdHR2rc09OD1lbzh/X4+DimpqZQU1OjdP79sw2AMyXF43HEYjFsbW1pv+3t7bpfqOOR43Ce7VutkOHT05NKK9POgH19fdqEtaOjowOhUEjxjOIWjUbx8vKC6+trbG9vK9m3SCTyXXpBbV1kx+v1IhAIoKKiAoODg2hpaeGnN1j7j4+PVT0Jh8Pw+/0KKN02NzerMXWYNZLcBZ4ZOY9RMf6bU8Uu/Le2tobq6mp0dXWpXc/rWiajDG9vb3F4eIiFhQU1HhsbUxt0aWkJj4+PYPYM8vClIq+jUPrRUPTT7Pn5GXRIYvVkEM6MdHFxoeqKUVuoSzo5OcH9/b3qG3/qGKafSz8MZr7WqB1M/9DQEFOodj3XnXRwcICzM/MTMJFIKD0WOSvZvgd4pPr7+03+9vb2sLq6auJxwGOai2wD4Kx49HixsHJeXV2pI5krUC7+pwBwI36WSr6IZKOxnjtC9FUyAIm86Uj0v042SwbAe0OQJz8Lgj7oq2QAcmRPxXBAHPxiCksFQhva0gd9/QFliFiu8Gk7TgAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                        
+                        </div>
+                    </div>
+
+                    <label for="password_confirmacion">Contraseña</label>
+                    <div class="row">
+                        <div class="col-xs-12 form-group item-form">
+                        <input id="password_confirmacion" type="password" class="form-control" name="password" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAA11JREFUWAndVzlLY1EU/pKJioiiiYoxgoIguMQoUyg2CTbBTrCcUvAHWFgJNlbzM6wGQQQLO3VEEEtTuRSKiMaFxA0R18z57uRd5r3szxeEOZDce8/63XOX864LQvPz84G3t7ef0o2kUqlW8pwil8t1Lr5+ezyemdnZ2TOrX1c6eEwC+6xCJ8cCJCEgQlYQbs683ME5EcZIZ9k0L7eMIiZOeQcZsdxOr3k+/NliMQNfSv83gO7ubkxPT4NtLiprBnp7e1FXVwe2uaisAOTsq7hGmw1EWQFkC2jlmQBUVVWhs7MTDQ0NVj3YlWU4sjA8xri+vh6Tk5Oora3Fx8cHVlZWsLu7q8R2ZYbvfK3OwPDwsApOZbfbjdHRUW1nV6Yd5OloAHl0yirSAHZ2dvDw8KCCcQnW19d1YLsy7SBPxzU3N5cy5NxobW1tSCaTuLm5MdiqzSczKRYYyJGMi8pm+vvg1ASggK2jYgGSFBADegkc9V6EM6mMXn4ffBmANMawvgeKAJ2hEgwGMTIyAp/Ph7u7O+zv72NjY0PdIxnKWRiSBb9tAAw+MTGh3TY1NYE/gllcXNR8dhobG1FZWYnLy0u8v7+bZLaXgDMnvb6+Ynl5GUdHR2rc09OD1lbzh/X4+DimpqZQU1OjdP79sw2AMyXF43HEYjFsbW1pv+3t7bpfqOOR43Ce7VutkOHT05NKK9POgH19fdqEtaOjowOhUEjxjOIWjUbx8vKC6+trbG9vK9m3SCTyXXpBbV1kx+v1IhAIoKKiAoODg2hpaeGnN1j7j4+PVT0Jh8Pw+/0KKN02NzerMXWYNZLcBZ4ZOY9RMf6bU8Uu/Le2tobq6mp0dXWpXc/rWiajDG9vb3F4eIiFhQU1HhsbUxt0aWkJj4+PYPYM8vClIq+jUPrRUPTT7Pn5GXRIYvVkEM6MdHFxoeqKUVuoSzo5OcH9/b3qG3/qGKafSz8MZr7WqB1M/9DQEFOodj3XnXRwcICzM/MTMJFIKD0WOSvZvgd4pPr7+03+9vb2sLq6auJxwGOai2wD4Kx49HixsHJeXV2pI5krUC7+pwBwI36WSr6IZKOxnjtC9FUyAIm86Uj0v042SwbAe0OQJz8Lgj7oq2QAcmRPxXBAHPxiCksFQhva0gd9/QFliFiu8Gk7TgAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                        <!-- <a href="#" class="fa fa-fw fa-eye-slash input-icon" id="eye-password" onclick="viewpassword()"
+                            alt="Mostrar contraseña"><span class="sr-only">Mostrar contraseña</span></a> -->
+                        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                        <!-- AGREGAR SMALL -->
+                        <p class="small"><a href="/password/reset/">¿Olvidaste tu contraseña?</a></p>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="row">
+                        <div class="col-md-8">
+                        <button type="submit" class="btn btn-success" id="login">Ingresar</button>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+            </div>
+
+            <!-- AGREGAR OTRO PANEL -->
+
+
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h2>¿No tenés cuenta?</h2>
+                    <a href="/registro/?next=/authorize/%3Fclient_id%3D613410%26response_type%3Dcode%26scope%3Dopenid%2Bprofile%2Bemail%2Boptional%26redirect_uri%3Dhttps%3A//mi.argentina.gob.ar/_oauth/oidc%26state%3DeyJsb2dpblN0eWxlIjoicmVkaXJlY3QiLCJjcmVkZW50aWFsVG9rZW4iOiJaaThyN3VycHRqaE4zenNMRCIsImlzQ29yZG92YSI6ZmFsc2UsInJlZGlyZWN0VXJsIjoiaHR0cHM6Ly9taS5hcmdlbnRpbmEuZ29iLmFyLyJ9" class="btn btn-primary" role="button" tabindex="0">Creá tu cuenta
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container-fluid main-footer p-x-2">
+        <div class="row footer center-block">
+            <div class="col-sm-6 m-y-1">
+              <img class="image-responsive" height="30" alt="Argentina Unida" src="assets/logo_argentina_unida.svg">
+            </div>
+            <div class="col-sm-6 text-right m-t-1 m-b-2">
+              <a href="#">Preguntas frecuentes</a>
+              <a href="#">Términos y condiciones</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script>
+      window.onload = function(){
+        document.querySelector('.inicio').addEventListener("click", function (){
+    
+          document.getElementById('menuMobile').classList.toggle('forMenuMobile')
+          document.querySelector('.dashboard-sidebar').classList.toggle('hidden')
+        })
+      }
+          
+        </script> -->
+
+
+
+<!-- SACAR javascript de botonera hamburger -->
+
+<!-- <script>
+$("#btn-mobile").click(function(){
+  $(".sidebar").toggleClass("sidebar-mobile"),
+  $(".sidebar-overlay").toggleClass("sidebar-overlay-on");
+});
+$(".sidebar-overlay").click(function(){
+  $(".sidebar").toggleClass("sidebar-mobile"),
+  $(".sidebar-overlay").toggleClass("sidebar-overlay-on");
+});
+</script> -->
+
+
+
+
+
+</body>
+</html>
